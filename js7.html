@@ -1,0 +1,57 @@
+<html>
+<script>
+function fun()
+{
+var a=f1.t1.value;
+var b=f1.t2.value;
+
+if(a=="")
+{
+alert("username is empty");
+f1.t1.focus();
+}
+else if(!isNaN(a))
+{
+alert("username cannot be number type");
+f1.t1.focus();
+}
+
+
+
+else if(b=="")
+{
+alert("password cannot be left blank");
+f1.t2.focus();
+}
+else if(b.length<8)
+{
+alert("should have atleast 8 characters");
+f1.t2.focus();
+}
+
+else
+{
+alert("data submitted successfully");
+f1.login();
+}
+}
+
+</script>
+
+
+
+
+<body bgcolor=powderblue>
+<form name="f1" action=second.jsp>
+<h2 align=center><font color="red">JAVA SCRIPT></font></h2>
+<hr color=blue>
+
+<table>
+<tr><td>Username<td><input type="text"  name=t1  size=20></tr>
+<tr><td>Password<td><input type="password"  name=t2></tr>
+
+<tr><td><input type=button  name=s1 value=login  onClick='fun()'></tr>
+</table>
+</form>
+</body>
+</html>

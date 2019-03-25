@@ -1,0 +1,42 @@
+<html>
+<head>
+<script>
+
+function addNumbers()
+{
+var var1=parseInt(document.getElementById("value1").value);
+var var2=parseInt(document.getElementById("value2").value);
+ans.value=var1+var2;
+}
+function subNumbers()
+{
+var var1=parseInt(document.getElementById("value1").value);
+var var2=parseInt(document.getElementById("value2").value);
+ans.value=var1-var2;
+}
+function mulNumbers()
+{
+var var1=parseInt(document.getElementById("value1").value);
+var var2=parseInt(document.getElementById("value2").value);
+ans.value=var1*var2;
+}
+function divNumbers()
+{
+var var1=parseInt(document.getElementById("value1").value);
+var var2=parseInt(document.getElementById("value2").value);
+ans.value=var1/var2;
+}
+</script>
+</head>
+<body>
+Enter a number=<input type="text" id="value1"/><br>
+Enter a number=<input type="text" id="value2"/><br><br>
+
+<input type="submit" name="submit" value="Add" onClick='addNumbers()'/>
+<input type="submit" name="submit" value="Sub" onClick='subNumbers()'/>
+<input type="submit" name="submit" value="Mul" onClick='mulNumbers()'/>
+<input type="submit" name="submit" value="Div" onClick='divNumbers()'/><br>
+Answer=<input type=text id="ans"/>
+
+</body>
+</html>
