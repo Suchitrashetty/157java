@@ -1,0 +1,20 @@
+import { Component } from '@angular/core';
+
+@Component({
+  selector: 'my-app',
+  template: `<form>
+  <table>
+  <tr><td><label>Product id:</label><td>
+  <input type="text" name="pid" size=20/><br/></tr>
+  <tr><td><label>Product name:</label><td>
+  <input type="text" name="pname" size=20/><br/></tr>
+  <tr><td><label>Product unit:</label><td>
+  <input type="text" name="punit" size=20/><br/></tr>
+  <tr><td><label>Product price:</label><td>
+  <input type="text" name="pprice" size=20/><br/></tr>
+  <tr><td><td>
+  <input type="submit" name="submit"/><br/></tr>
+  </table>
+  </form>`,
+})
+export class AppComponent  {}

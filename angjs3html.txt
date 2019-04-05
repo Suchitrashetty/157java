@@ -1,0 +1,9 @@
+<html>
+    <div>
+        My name is {{Myname}}<br/>
+          {{appList[0]}}<br/>
+         {{appList[1]}}<br/>
+         {{appList[2]}}<br/></div>
+        {{appList[3]}}<br/>
+
+</html>
